@@ -35,6 +35,7 @@
     background-image: url("https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com/images/home-page-banners/2019-Q2-Promo-Home-Page-Button-No-text.jpg");
     width:100%;
     border-radius:5px;
+    margin-bottom:15px;
 }
 
 #summerEvent{
@@ -61,3 +62,59 @@
     margin-top:20px;
     bottom:auto;
 }
+#thirdRow{
+    padding:0;
+    margin-bottom:30px;
+}
+#firstPicture{
+    height:200px;
+    width:350px;
+    border-radius:5px;
+}
+#secondPicture{
+    height:200px;
+    width:350px;
+    border-radius:5px;
+}
+#thirdPicture{
+    height:200px;
+    width:350px;
+    border-radius:5px;
+}
+.top-left{
+  color:white;
+  position: absolute;
+  top: 8px;
+  left: 30px;
+}
+.bottom-left {
+    color:white;
+    position: absolute;
+    bottom: 150px;
+    left: 30px;
+  }
+  .bottom-right a {
+    color:white;
+    position: absolute;
+    bottom: 8px;
+    right: 100px;
+  }
+  #secondHeader{
+      background-color: #404250;
+      justify-content:center;
+  }
+  #secondHeading{
+      text-align:center;
+      color:white;
+      padding:30px;
+  }
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #404250;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+  }
