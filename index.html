@@ -137,22 +137,19 @@
     <br>
     <br>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <img
-                    src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/Premium.Access.Scroll.jpg">
-            </div>
-            <div class="col-sm-3">
-                <img
-                    src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/Premium.Access.Scroll.jpg">
-            </div>
-            <div class="col-sm-3">
-                <img
-                    src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/Premium.Access.Scroll.jpg">
-            </div>
-            <div class="col-sm-3">
-                <img
-                    src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/Premium.Access.Scroll.jpg">
+        <div class="row" id="slideshow">
+                <div class="slide-container">
+                        <img class="mySlides" src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/Premium.Access.Scroll.jpg" />
+                        <img class="mySlides" src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/Live.Graphics.Scroller.jpg" />
+                        <img class="mySlides" src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/Spark-Plus-Carousel.jpg" />
+                        <img class="mySlides" src="https://233b1d13b450eb6b33b4-ac2a33202ef9b63045cbb3afca178df8.ssl.cf1.rackcdn.com//images/home-page-buttons/new/VMC-Carousel.jpg" />
+                        </div>
+        </div>
+
+        <div class="row" id="slideshow">
+            <div class="w3-center">
+                <button class="btn btn-secondary" id="customBtn" onclick="plusDivs(-1)">&#10094; Prev</button>
+                <button class="btn btn-secondary" id="customBtn" onclick="plusDivs(1)">Next &#10095;</button>
             </div>
         </div>
     </div>
@@ -223,7 +220,8 @@
             </div>
             <div class="col-sm-8">
                 <p class="title">An Historic University Uses NDI</p>
-                <p class="storyText">In the country now known as the Czech Republic, in the city of Prague, sits an institution that’s been around nearly as long as modern society itse...</p>
+                <p class="storyText">In the country now known as the Czech Republic, in the city of Prague, sits an
+                    institution that’s been around nearly as long as modern society itse...</p>
             </div>
         </div>
         <hr id="secondHr">
@@ -234,7 +232,8 @@
             </div>
             <div class="col-sm-8">
                 <p class="title">Esports Hub Launches Staffordshire University into a New League</p>
-                <p class="storyText">“Whatever equipment our students use—whatever facilities we put in place—we always make sure we’re meeting one expectation: that students will get ...</p>
+                <p class="storyText">“Whatever equipment our students use—whatever facilities we put in place—we always
+                    make sure we’re meeting one expectation: that students will get ...</p>
             </div>
         </div>
         <hr id="secondHr">
@@ -245,7 +244,8 @@
             </div>
             <div class="col-sm-8">
                 <p class="title">Carlsbad High School’s Award-Winning CHSTV Broadcast Journalism Program</p>
-                <p class="storyText">At Carlsbad High School—a public high school in Carlsbad, California—the Broadcast Journalism Program, branded CHSTV, produces award-winning live d...</p>
+                <p class="storyText">At Carlsbad High School—a public high school in Carlsbad, California—the Broadcast
+                    Journalism Program, branded CHSTV, produces award-winning live d...</p>
             </div>
         </div>
         <hr id="secondHr">
@@ -260,7 +260,6 @@
         </div>
     </div>
     <br>
-    
 
 
 
@@ -273,6 +272,25 @@
 
 
 
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

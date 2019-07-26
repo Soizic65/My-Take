@@ -191,3 +191,22 @@
     color: #00d0f7;
     border:1px solid yellow;
 }
+
+#slideshow{
+    justify-content: center;
+}
+.slide-container {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+@media screen and (max-width: 530px){
+    #newtekHeading{
+        font-size:100px;
+    }
+}
+@media screen and (max-width: 400px){
+    #newtekHeading{
+        font-size:70px;
+    }
+}
