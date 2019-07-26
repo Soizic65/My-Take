@@ -64,7 +64,7 @@
 }
 #thirdRow{
     padding:0;
-    margin-bottom:30px;
+    margin-bottom:15px;
 }
 #firstPicture{
     height:200px;
@@ -107,6 +107,8 @@
       text-align:center;
       color:white;
       padding:30px;
+      font-weight: normal;
+      font-size:25px;
   }
   .arrow-down {
     width: 0; 
@@ -118,3 +120,6 @@
     position: absolute;
     left: 50%;
   }
+ #firstSlide{
+     left: 20%;
+ }
